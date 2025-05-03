@@ -13,7 +13,7 @@ SECRET_KEY = "django-insecure-3$cixlg+4)5j6swt%92_rf9gws0!5mm&lydp%t-kq#2(afzz5*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -27,7 +27,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # apps config
     "sps_onboarding",
-    "sps_generics"
+    "sps_generics",
+
+
+    # third party apps
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
